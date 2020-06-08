@@ -163,8 +163,30 @@ h1 {
 	right: 0;
 }
 #carousel {
-  height: 200px;
-  background-color: lightpink;
+	background-color: #B799AF;
+  height: 300px;
+	display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+	overflow-y: hidden;
+}
+
+#carousel-content {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.carousel-card {
+	width: 300px;
+	flex: 1 1 40%;
+}
+
+.carousel-card-bg {
+	width: calc(100% - 5px);
+	height: calc(100% - 5px);
+	margin: 5px;
+	background-size: cover;
+	background-position: center;
 }
 
 /* 
@@ -206,6 +228,9 @@ h1 {
     margin: 0;
     background-color: pink;
   }
+	.carousel-card {
+		width: 250px;
+	}
 }
 
 /* mobile */
@@ -222,4 +247,8 @@ h1 {
     width: calc(100% - 100px);
 
   }
+	
+	.carousel-card {
+		width: 150px;
+	}
 }
