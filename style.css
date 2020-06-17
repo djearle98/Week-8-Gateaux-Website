@@ -78,11 +78,8 @@ h1 {
 */
 #notification {
   text-align: center;
-  background-color: #8B0000;
-  color: white;
+  background-color: white;
 }
-#notification a {
-  color: white;
 /* 
 ------------HEADER STYLES------------ 
 */
